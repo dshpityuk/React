@@ -22,6 +22,10 @@
     width: 70px;
 }
 
+.Profile img {
+    width: 70px;
+}
+
 
 .nav {
     grid-area: n;
