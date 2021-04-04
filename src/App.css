@@ -12,19 +12,6 @@
 }
 
 
-.header {
- grid-area: h;
-    background-color: darkslateblue;
-}
-
-
-.header img {
-    width: 70px;
-}
-
-.Profile img {
-    width: 70px;
-}
 
 
 .nav {
