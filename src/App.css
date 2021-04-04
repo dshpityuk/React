@@ -12,16 +12,13 @@
 }
 
 
-
-
 .nav {
     grid-area: n;
-    background-color: yellow;
+    background-color: goldenrod;
 }
-
 
 
 .content {
     grid-area: c;
-    background-color: cornflowerblue;
+    background-color: rgb(88, 87, 87);
 }
