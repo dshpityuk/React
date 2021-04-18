@@ -4,20 +4,22 @@ import './Navbar.css';
 const Navbar = () => {
     return <nav className='nav'>
         <div className="item">
-        <a>Profile</a>
-    </div>
-    <div className='item'>
-        <a>Messages</a>
-    </div>
-    <div className='item'>
-        <a>News</a>
-    </div>
-    <div className='item'>
-        <a>Music</a>
-    </div>
-    <div className='item'>
-        <a>Settings</a>
-    </div>
+            <button className='butter'><a href='#'>Profile</a></button>
+        </div>
+        <div className='item'>
+            <button><a href='#'>Messages</a></button>
+        </div>
+        <div className='item'>
+            <button><a href='#'>News</a></button>
+        </div>
+        <div className='item'>
+            <button><a href='#'>Music</a></button>
+        </div>
+        <div className='item'>
+            <button><a href='#'>Settings</a></button>
+        </div>
     </nav>
+
 }
+
 export default Navbar;
