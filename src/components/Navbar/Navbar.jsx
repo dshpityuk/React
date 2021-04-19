@@ -1,22 +1,34 @@
 import React from "react";
-import './Navbar.css';
+import s from './Navbar.module.css';
+console.log(s)
+// let s = {
+//    'nav': 'Navbar_nav__2Kv0T',
+//    'item': 'Navbar_item__1xqd1'
+//    'active': 'Nadsdks_active',
+//}
+
+let c1 = "item";
+let c2 = "active";
+// "item + active" // конкатенация
+let classes = c1 + " " + c2;
+let classesNew = `${s.item} ${s.active}`;
 
 const Navbar = () => {
-    return <nav className='nav'>
-        <div className="item">
-            <button className='butter'><a href='#'>Profile</a></button>
+    return <nav className={s.nav}>
+        <div className={s.item}>
+            <a>Profile</a>
         </div>
-        <div className='item'>
-            <button><a href='#'>Messages</a></button>
+        <div className={ `${s.item} ${s.active}` }>
+            <a>Messages</a>
         </div>
-        <div className='item'>
-            <button><a href='#'>News</a></button>
+        <div className={s.item}>
+            <a>News</a>
         </div>
-        <div className='item'>
-            <button><a href='#'>Music</a></button>
+        <div className={s.item}>
+            <a>Music</a>
         </div>
-        <div className='item'>
-            <button><a href='#'>Settings</a></button>
+        <div className={s.item}>
+            <a>Settings</a>
         </div>
     </nav>
 

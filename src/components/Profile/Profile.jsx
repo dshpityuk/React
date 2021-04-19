@@ -1,26 +1,25 @@
 import React from 'react';
-import './Profile.css';
+import s from './Profile.module.css';
 
 const Profile = () => {
-    return <div className='content'>
+    return <div className={s.content}>
         <div>
             <img src='https://pbs.twimg.com/profile_images/1326745577384718337/r38JbvnH_400x400.jpg' alt='Profile'/>
         </div>
         <div>
-            <div>
-                <button><a href='#'>My page</a></button>
+            <div className={s.item}>
+                My page
             </div>
-            <div>
-                <button><a href='#'>My posts</a></button>
+            <div className="item">
+                My posts
             </div>
-            <div>
-                <button><a href='#'>New posts</a></button>
-            </div>
-            <div>
-                <button><a href='#'>Blog 1</a></button>
-            </div>
-            <div>
-                <button><a href='#'>Blog 2</a></button>
+            <div className={s.posts}>
+                <div className={s.item}>
+                    Blog 1
+                </div>
+                <div className="item">
+                    Blog 2
+                </div>
             </div>
         </div>
     </div>
